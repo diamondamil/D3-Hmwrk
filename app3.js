@@ -115,11 +115,4 @@ chartGroup.append("text")
     .text("Age (median)")
     .attr("class", "inactive");
 
-
-  
-
-
-  
-    
-
 };  
