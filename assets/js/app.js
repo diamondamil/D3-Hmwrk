@@ -1,8 +1,6 @@
 // D3 Scatterplot Assignment
 
-// Students:
-// =========
-// Follow your written instructions and create a scatter plot with D3.js.
+// Create a scatter plot with D3.js.
 var svgWidth = window.innerWidth;
 var svgHeight = window.innerHeight;
 // var svgWidth = 960;
@@ -57,10 +55,6 @@ d3.csv('data.csv',function(error,data){
     .nice();
    
     yLinearScale 
-    // .domain([0,d3.max(data,function(response){
-    //     // console.log(response.State)
-    //     return response.HighSchool
-    // })]);
     .domain(d3.extent(data,d => d.HighSchool))
     .nice();
 
